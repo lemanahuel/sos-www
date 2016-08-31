@@ -1,0 +1,52 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button ng-click="vm.onClickCollapseNavBar()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/"><img src="/modules/core/client/img/logo.png" /></a>
+      <ch-country></ch-country>
+    </div>
+
+    <div uib-collapse="vm.mobileNavBarCollapse" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="btn-careers"><a ui-sref="careers">Cursos</a></li>
+        <li class="btn-workshops"><a ui-sref="workshops">Workshops</a></li>
+        <li class="dropdown btn-remote">
+          <a href="#" class="dropdown-toggle" ng-click="vm.isCollapsedRemoto = !vm.isCollapsedRemoto; vm.isCollapsedPres = false" role="button" aria-haspopup="true" aria-expanded="false">Remoto<span class="caret"></span>
+            </a>
+          <article class="dropdown-menu" ng-show="vm.isCollapsedRemoto" style="display:block">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2>Modalidad online</h2>
+                </div>
+
+                <div class="col-sm-6">
+                  <h3>Cursos</h3>
+                  <ul>
+                    <li>
+                      <a ui-sref="remote({courseUrl: 'disenador-web'})" ng-click="vm.isCollapsedRemoto = false" href="/remoto/disenador-web">Diseñador Web</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </article>
+        </li>
+        <li class="btn-jobs"><a ui-sref="jobs">Empleos</a></li>
+        <li class="btn-teach-with-us"><a class="btn btn-primary ch-btn ch-primary" ui-sref="instructores-typeform">Conviértete en instructor</a></li>
+        <li class="btn-download-item">
+          <a href="#" ng-click="vm.onClickDownloadCert($event)"><i class="fa fa-download" aria-hidden="true"></i></a>
+        </li>
+        <li class="btn-print-item">
+          <a href="#" ng-click="vm.onClickPrintCert($event)"><i class="fa fa-print" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

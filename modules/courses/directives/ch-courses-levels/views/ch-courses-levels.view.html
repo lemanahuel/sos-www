@@ -1,0 +1,36 @@
+<section class="una-carrera">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+			</div>
+			<article class="col-md-4 col-md-offset-0 col-sm-offset-0 col-sm-4 col-xs-12" ng-repeat="level in ::course.levels track by $index">
+				<a ui-sref="course({courseUrl:level.url})" class="modulo">
+
+					<header class="text-center {{::level.url}}">
+						<img ng-src="{{'/modules/core/client/img/cursos/' + level.url + '.svg'}}">
+						<h1 ng-bind="::level.title"></h1>
+						<!-- <h3  ng-bind="::level.subtitle"></h3> -->
+						<hr/>
+						<p><small ng-bind="::'Duración: '+ level.detail.weeks +' semanas'"></small></p>
+					</header>
+					<div ng-if="['diseno-grafico', 'diseno-ux'].indexOf(level.url) === -1" class="nivel {{::level.url}}">
+						<span class="ion-ios-circle-filled"></span>
+						<span class="ion-ios-circle-{{::!$first ? 'filled' : 'outline'}}"></span>
+						<span class="ion-ios-circle-{{::$last ? 'filled' : 'outline'}}"></span> {{$first ? 'Principiante' : $middle ? 'Intermedio' : 'Avanzado'}}
+					</div>
+					<div ng-if="['diseno-grafico', 'diseno-ux'].indexOf(level.url) !== -1" ng class="nivel {{::level.url}}">
+						<span class="ion-ios-circle-filled"></span>
+						<span class="ion-ios-circle-outline"></span>
+						<span class="ion-ios-circle-outline"></span> Principiante
+					</div>
+					<div class="contenido">
+						<!-- <ul class="tecnologias" ng-if="::level.tecnologies && level.tecnologies.length">
+							<li ng-repeat="tec in ::level.tecnologies"><span class="ion-social-{{tec.title}}"></span></li>
+						</ul> -->
+						<p ng-bind="::level.description"></p>
+					</div>
+				</a>
+			</article>
+		</div>
+	</div>
+</section>

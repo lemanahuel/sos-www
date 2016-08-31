@@ -1,0 +1,91 @@
+@mixin modulo-curso($color) {
+  margin-bottom: 50px;
+  .icon {
+    float: left;
+    margin-right: 20px;
+    .circle {
+      max-width: 100px;
+      border-radius: 50%;
+      padding: 20px;
+      transition: 0.5s;
+      float: right;
+      background: $color;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .contenido {
+    a {
+      text-decoration: none;
+      display: inline;
+    }
+    h2 {
+      font-weight: 400;
+      margin: 0 0 5px;
+      font-size: 20px;
+      color: $color;
+      min-height: 44px;
+      strong {
+        font-weight: 700;
+      }
+      @media screen and (max-width:400px) {
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
+    p {
+      margin: 0;
+    }
+    .link {
+      font-family: $title-font;
+      color: $color;
+      display: inline-block;
+      margin-top: 10px;
+      &:hover {
+        color: $color;
+      }
+    }
+  }
+}
+.curso-modulo {
+  &.disenador-web {
+    @include modulo-curso($disenador-web);
+  }
+  &.programador-web {
+    @include modulo-curso($programador-web);
+  }
+  &.experto-front-end,
+  &.experto-frontend {
+    @include modulo-curso($curso-frontend);
+  }
+  &.experto-full-stack {
+    @include modulo-curso($curso-fullstack);
+  }
+  &.experto-movil {
+    @include modulo-curso($curso-movil);
+  }
+  &.especialista-en-marketing-digital,
+  &.marketing-digital,
+  &.marketing-digital-basico {
+    @include modulo-curso($curso-marketing1);
+  }
+  &.marketing-digital-avanzado {
+    @include modulo-curso($curso-marketing2);
+  }
+  &.wordpress,
+  &.wordpress-basico {
+    @include modulo-curso($curso-wordpress1);
+  }
+  &.wordpress-avanzado {
+    @include modulo-curso($curso-wordpress2);
+  }
+  &.diseno-grafico,
+  &.especialista-en-diseno-web {
+    @include modulo-curso($curso-disenador-grafico);
+  }
+  &.diseno-ux,
+  &.especialista-en-experiencia-de-usuario {
+    @include modulo-curso($curso-diseno-ux);
+  }
+}

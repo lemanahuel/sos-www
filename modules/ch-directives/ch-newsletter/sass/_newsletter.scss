@@ -1,0 +1,57 @@
+#newsletter {
+	padding: 50px 0;
+	background-color: #f9f9f9;
+	color: #333;
+	border: 8px solid;
+	border-left: 0;
+	border-right: 0;
+	border-image: url("/modules/ch-directives/ch-newsletter/img/postal.svg") 30 0 round;
+	h1 {
+		text-transform: uppercase;
+		letter-spacing: -1px;
+	}
+	form {
+
+		p{
+			font-size: 16px;
+			display: block;
+			margin-bottom: 30px;
+		}
+
+		input[type=email] {
+			width: 450px;
+			font-size: 21px;
+			font-weight: 300;
+			border: none;
+			padding: 30px;
+			border-radius: 0;
+			border-bottom: 3px solid gray;
+			box-shadow: none;
+		}
+		input[type=submit] {
+			padding: 15px 50px;
+			left: -5px; 
+			background-color: $cta;
+			font-size: 21px;
+			text-transform: capitalize;
+			border: none;
+			position: relative;
+			border-bottom: 4px solid $cta-dark;
+			border-radius: 0;
+		}
+
+		@media (max-width: 800px){
+			input[type=email] {
+				width: 100%;
+				border: none;
+				border: 1px solid #888;
+				margin: auto;
+				margin-bottom: 20px;
+			}
+
+			input[type=submit] {
+				border: none;
+			}	
+		}
+	}
+}

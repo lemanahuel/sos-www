@@ -1,0 +1,163 @@
+.navbar-brand {
+	padding: 10px;
+	img {
+		max-width: 150px;
+	}
+}
+.mobile,
+.tablet {
+	.navbar-inverse {
+		border: 0;
+	}
+}
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+	font-size: 15px;
+}
+.navbar-nav > li > .dropdown-menu {
+	background: #222222;
+	@media (min-width: 768px) {
+		margin-right: -180px;
+		top: 63px;
+	}
+}
+.dropdown-menu > li > a {
+	font-weight: 300;
+	color: #DDD;
+}
+nav {
+	z-index: 5;
+	border-radius: 0 !important;
+	margin-bottom: 0 !important;
+	.border {
+		border: 1px solid white;
+		padding: 5px 10px 8px !important;
+		border-radius: 4px;
+		margin-top: 10px;
+		margin-left: 10px;
+		transition: 0.5s;
+		display: inline-block !important;
+		&:hover {
+			background: $cta !important;
+			border-color: $cta-dark;
+		}
+	}
+	h3 {
+		color: $main-color;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.dropdown-menu {
+		.container {
+			max-width: 500px;
+		}
+		h2 {
+			font-size: 15px;
+			color: white;
+			text-transform: uppercase;
+			border-bottom: 1px solid $main-color;
+			margin: 0;
+			line-height: 40px;
+			position: relative;
+			top: -5px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			li {
+				padding: 5px 0;
+				a {
+					color: #ccc;
+					text-decoration: none;
+					transition: 0.5s;
+					line-height: 16px;
+					&:hover {
+						color: $main-color;
+						padding-left: 5px;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+	.workshops {
+		hr {
+			margin-bottom: 10px;
+		}
+		ul {
+			li {
+				a {
+					&:hover {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	.navbar-header {
+		position: relative;
+	}
+	.btn-download-item,
+	.btn-print-item {
+		display: none;
+	}
+}
+.navbar-nav > li > a {
+	padding-top: 16px;
+	padding-bottom: 17px;
+}
+.ch-btn {
+	padding: 7px 8px !important;
+	margin-top: 7px !important;
+	background: transparent !important;
+	&.btn-primary {
+		border: 1px solid #fff;
+	}
+	&:hover {
+		transform: background 0.25s;
+		background: rgba(255,255,255,.15) !important;
+	}
+}
+.home {
+	.navbar-inverse {
+		background: none;
+		border: none;
+	}
+}
+@media (max-width: 768px) {
+	.navbar {
+		border-radius: 0;
+		background: #333 !important;
+		border: none;
+		margin: 0;
+		.dropdown-menu {
+			width: 100%;
+		}
+	}
+	.navbar-inverse .navbar-collapse.in {
+		overflow: visible;
+	}
+	.navbar-nav > li {
+		padding: 10px 0;
+		margin: -10px auto;
+	}
+	.navbar > .container .navbar-brand,
+	.navbar > .container-fluid .navbar-brand {
+		margin-top: 3px;
+	}
+}
+.seccion-certification {
+	.btn-careers,
+	.btn-jobs,
+	.btn-remote,
+	.btn-teach-with-us,
+	.btn-workshops,
+	.switch-flag {
+		display: none;
+	}
+	.btn-download-item,
+	.btn-print-item {
+		display: inline-block;
+	}
+}

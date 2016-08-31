@@ -1,0 +1,50 @@
+<div class="nav-landing">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="modules/core/client/img/logo.png" style="max-width:150px;" />
+      </div>
+    </div>
+  </div>
+</div>
+<header class="pages">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 ng-bind="::vm.landing.title"></h1>
+        <h4 ng-bind="::vm.landing.subtitle"></h4>
+      </div>
+
+      <div class="col-md-4">
+        <h5>Recibe el programa de la carrera a tu mail.</h5>
+        <form ng-submit="vm.onSubmitLandingForm()">
+          <div class="form-group">
+            <input ng-model="vm.landingForm.name" required="" type="text" name="nombre" placeholder="Ingresa tu nombre" class="form-control input-lg SmarketeerField" />
+          </div>
+          <div class="form-group">
+            <input ng-model="vm.landingForm.email" required="" type="email" id="smkt_email" name="email" placeholder="Déjanos tu email" class="form-control input-lg SmarketeerField" />
+          </div>
+          <div class="form-group">
+            <input ng-model="vm.landingForm.phone" required="" type="number" min="7" name="nombre" placeholder="y tu teléfono ;)" class="form-control input-lg SmarketeerField" />
+          </div>
+          <input type="submit" ng-value="vm.landingForm.btnSubmit || 'Recibir programa'" class="btn btn-primary btn-block btn-lg" />
+        </form>
+      </div>
+
+      <div class="col-md-5 col-md-offset-3 video">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0OBvz5u2vZE">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<ch-courses-levels ng-if="::vm.course.levels.length" course="vm.course"></ch-courses-levels>
+<ch-courses-program course="vm.course" is-landing="vm.isLanding"></ch-courses-program>
+
+<ch-courses-remote ng-if="::vm.course.remote"></ch-courses-remote>
+<ch-courses-practical-works course="vm.course"></ch-courses-practical-works>
+<ch-courses-teacher course="vm.course"></ch-courses-teacher>
+<ch-free-class ng-hide="HIDE_FREE_CLASS"></ch-free-class>

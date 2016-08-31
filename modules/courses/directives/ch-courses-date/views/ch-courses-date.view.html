@@ -1,0 +1,39 @@
+<section id="date-courses" class="inicios" ng-if="::vm.course.courses.length">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3>Fechas y Horarios</h3>
+			</div>
+			<div class="col-xs-12 fechas2">
+				<div class="table-responsive">
+					<table class="table">
+						<tbody>
+							<tr ng-if="::!date.soldOut" class="row {{::date._id}} {{::date.level}}" ng-repeat="date in ::vm.course.courses track by $index">
+								<td>
+									<p ng-bind="::(date.startDate | date:'dd ') +' de '+ (date.startDate | monthDateArg)  +' · '+  (date.endDate | date: 'dd')  +' de '+ (date.endDate | monthDateArg)">
+									</p>
+								</td>
+								<td>
+									<p ng-bind="::date.days"></p>
+								</td>
+								<td>
+									<p ng-bind="::date.place"></p>
+									<p ng-if="::date.startHour"><span ng-bind="::date.startHour | date:'HH:mm'"></span> - <span ng-bind="::date.endHour | date:'HH:mm'"></span></p>
+									<p ng-if="::!date.startHour" ng-bind="::date.hours"></p>
+								</td>
+								<td>
+									<p><small ng-class="{'temprana': date.offerPrice !== '' && date.offerPrice !== '0'}" ng-bind="::'PRECIO NORMAL: ' +(date.price | currency:date.currency.symbol:date.currency.decimals) + ' ' +  date.currency.iso_code"></small></p>
+									<p ng-bind="::'OFERTA TEMPRANA: ' + (date.offerPrice | currency:date.currency.symbol:date.currency.decimals) + ' ' +  date.currency.iso_code"></p>
+									<p><small ng-bind="::'VENCE: ' + (date.offerPriceDate | date:'dd ') +' de '+ (date.offerPriceDate | monthDateArg) "></small></p>
+								</td>
+								<td>
+									<a ng-click="vm.inscribirme(date)" class="btn btn-block btn-primary btn-inscribirme">Inscribirme</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,26 @@
+<section class="curso-info" ng-if="::vm.course.calendar.length">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
+				<h3>Programa</h3>
+				<p ng-bind="::vm.course.detail.description_all">
+				</p>
+			</div>
+			<div class="col-lg-8 col-lg-offset-2 col-md-12">
+				<div class="text-left accordion">
+					<uib-accordion>
+						<uib-accordion-group heading="{{::calendar.title}}" ng-repeat="calendar in ::vm.course.calendar">
+							<ul>
+								<li ng-repeat="content in ::calendar.content" ng-if="::content" ng-bind="::content"></li>
+							</ul>
+						</uib-accordion-group>
+					</uib-accordion>
+				</div>
+
+				<div class="text-center" ng-if="!vm.isLanding">
+					<a class="btn btn-primary btn-lg" ng-click="vm.viewProgram()">Ver programa completo</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

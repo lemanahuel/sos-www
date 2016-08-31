@@ -1,0 +1,64 @@
+#home-testimonios {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  h1.title {
+    @media (max-width:992px) {
+      text-align: center;
+    }
+  }
+  .overlay {}
+  .vermas {
+    margin-top: 30px;
+  }
+  .un-testimonio {
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    padding: 20px;
+    background: white;
+    margin: auto auto 30px;
+    p {
+      min-height: 120px;
+    }
+    a {
+      margin-top: 20px;
+      color: $cta;
+      &:hover {
+        color: $cta-dark;
+      }
+    }
+    @media (max-width:992px) {
+      max-width: 350px;
+    }
+    .foto {
+      &:after {
+        content: "\201C";
+        font-size: 80px;
+        background: $main-color;
+        color: white;
+        display: inline-block;
+        width: 60px;
+        position: absolute;
+        height: 60px;
+        text-align: center;
+        right: 0;
+        top: 70px;
+        border-radius: 50%;
+        line-height: 93px;
+        @media (max-width:1200px) and (min-width:992px) {
+          font-size: 60px;
+          width: 40px;
+          height: 40px;
+          top: 50px;
+          line-height: 65px;
+        }
+        @media (max-width:350px) {
+          font-size: 60px;
+          width: 40px;
+          height: 40px;
+          right: 10px;
+          top: 60px;
+          line-height: 65px;
+        }
+      }
+    }
+  }
+}

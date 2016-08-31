@@ -1,0 +1,44 @@
+<section id="profesores" ng-show="vm.teachers.length">
+  <div class="container">
+    <div class="row">
+      <div class="row">
+        <div class="col-md-4 info">
+          <h3>Profesores</h3>
+          <p>En Coderhouse nos aseguramos de contratar únicamente a los mejores profesores del mercado. Es por eso que nuestros instructores trabajan en empresas como MercadoLibre , Despegar.com, Globant, entre otras.
+          </p>
+          <p>Además de ser tus profesores, ellos se convertirán en tus mentores dentro y fuera de clase para ayudarte con tus proyectos y objetivos</p>
+        </div>
+
+        <div class="col-md-8">
+          <div class="row">
+            <article class="col-sm-4 text-center" ng-repeat="item in ::vm.teachers track by $index">
+              <div class="profesor">
+                <img ng-src="{{::item.avatar}}" alt="{{::item.first_name + ' ' + item.last_name}}" class="img-circle img-responsive" />
+                <hr/>
+                <h3 ng-bind="::item.first_name + ' ' + item.last_name"></h3>
+                <h5 ng-bind="::item.job.title"></h5>
+                <hr/>
+                <img ng-src="{{::item.job.company.logo || '/modules/core/client/img/companies/coderhouse_logo.png'}}" alt="{{::item.job.company.name || 'Coderhouse'}}" class="company-logo img-responsive" />
+                <hr/>
+                <ul class="social">
+                  <li ng-if="::item.social.web">
+                    <a href="{{::item.social.web}}" target="_blank"><span class="ion-link"></span></a>
+                  </li>
+                  <li ng-if="::item.social.linkedin">
+                    <a href="{{::item.social.linkedin}}" target="_blank"><span class="ion-social-linkedin"></span></a>
+                  </li>
+                  <li ng-if="::item.social.twitter">
+                    <a href="{{::item.social.twitter}}" target="_blank"><span class="ion-social-twitter"></span></a>
+                  </li>
+                  <li ng-if="::item.social.github">
+                    <a href="{{::item.social.github}}" target="_blank"><span class="ion-social-github"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

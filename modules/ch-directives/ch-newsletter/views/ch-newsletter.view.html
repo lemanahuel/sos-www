@@ -1,0 +1,18 @@
+<section id="newsletter">
+	<div class="container">
+		<div class="row">
+			<article class="col-xs-12 text-center">
+				<h2 ng-if="::!vm.forJobs">Contáctanos</h2>
+				<h2 ng-if="::vm.forJobs">Suscríbete</h2>
+				<form name="formNewsletter" class="form-inline" ng-submit="vm.sendSuscription()">
+					<p ng-if="::!vm.forJobs">Conoce nuestras promociones. Entérate de nuestros cursos y workshops</p>
+					<p ng-if="::vm.forJobs">Recibe todas las búsquedas en tu casilla de mail</p>
+					<div class="form-group">
+						<input type="email" id="smkt_email" ng-model="vm.email" class="form-control SmarketeerField" placeholder="Déjanos tu email" required="" />
+						<input type="submit" value="{{vm.valueSubmit || 'Enviar'}}" class="btn btn-primary" />
+					</div>
+				</form>
+			</article>
+		</div>
+	</div>
+</section>

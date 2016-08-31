@@ -1,0 +1,43 @@
+<section id="carreras" ng-show="::vm.careers.length">
+  <div class="container">
+    <div class="row" ng-if="!vm.hideTitle">
+      <div class="col-xs-12">
+        <h2 class="title">
+            <a ui-sref="courses">Cursos</a>
+        </h2>
+      </div>
+    </div>
+    <div class="row career-flex-container">
+      <div class="col-md-4 col-sm-6 col-xs-12" ng-repeat="item in ::vm.careers | orderBy : 'id_career' track by item._id">
+        <div ng-if="item.levels.length" class="carrera-modulo {{::item.url}} {{::vm.classCareer[item.id_career]}}">
+          <a href="#" ui-sref="career({careerUrl: item.url})">
+            <header>
+              <img ng-src="{{'/modules/core/client/img/cursos/' + item.url + '.svg'}}">
+              <div class="info">
+                <h2 ng-bind="item.title"></h2>
+                <p><span ng-bind="::item.levels.length"></span> niveles · <span ng-bind="::item.detail.weeks"></span> semanas.</p>
+              </div>
+            </header>
+          </a>
+          <div class="contenido">
+            <ul>
+              <li ng-repeat="level in ::item.levels track by level._id" class="curso-modulo {{::level.url}}">
+                <a href="#" ui-sref="course({courseUrl: level.url})">
+                  <article class="row">
+                    <div class="col-xs-2 icon">
+                      <span class="circle"><img ng-src="{{'/modules/core/client/img/cursos/' + level.url + '.svg'}}"></span>
+                    </div>
+                    <div class="col-xs-9">
+                      <h3 ng-bind="level.subtitle"></h3>
+                      <!-- <h5><span ng-if="tech.title" ng-repeat="tech in level.tecnologies" ng-bind="tech.title + ', '"></span></h5> -->
+                    </div>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
