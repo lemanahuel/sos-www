@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-teachers/views/ch-teachers.view.html',
+      templateUrl: 'modules/home/directives/sos-teachers/views/sos-teachers.view.html',
       scope: {}
     };
   }]);

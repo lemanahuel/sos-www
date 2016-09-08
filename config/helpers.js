@@ -10,13 +10,13 @@ module.exports.forceHttps = (req, res, next) => {
   if (!req.secure) {
     if (env === 'development') {
       host = 'localhost:3040';
-    } else if (host === 'ch-www.herokuapp.com' || host === 'coderhouse.com') {
-      host = 'www.coderhouse.com';
+    } else if (host === 'sos-www.herokuapp.com' || host === 'voluntariosos.com') {
+      host = 'www.voluntariosos.com';
     }
 
     res.redirect(301, 'https://' + host + url);
-  } else if (host === 'ch-www.herokuapp.com' || host === 'coderhouse.com') {
-    res.redirect(301, 'https://www.coderhouse.com' + url);
+  } else if (host === 'sos-www.herokuapp.com' || host === 'voluntariosos.com') {
+    res.redirect(301, 'https://www.voluntariosos.com' + url);
   } else {
     next();
   }

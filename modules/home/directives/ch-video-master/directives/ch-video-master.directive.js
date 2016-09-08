@@ -7,7 +7,7 @@ angular
 
       var modal = (function() {
         var $body = $('body'),
-          view = 'modules/home/directives/ch-video-master/views/ch-video-master.view.html';
+          view = 'modules/home/directives/sos-video-master/views/sos-video-master.view.html';
 
         $http.get(view).then(function(data) {
           $templateCache.put(view, data.data);

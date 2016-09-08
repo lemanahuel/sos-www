@@ -68,7 +68,7 @@ angular
   ])
   .config([function () {
     var isProd = location.host;
-    var pk = (isProd.indexOf('coderhouse') !== -1 || isProd === 'ch-www.herokuapp.com') ? 'pk_live_161K5nmBoF8y0OyOD2XQxSRF' : 'pk_test_yphpqZgdhQrti1FH6mZLWLhp';
+    var pk = (isProd.indexOf('coderhouse') !== -1 || isProd === 'sos-www.herokuapp.com') ? 'pk_live_161K5nmBoF8y0OyOD2XQxSRF' : 'pk_test_yphpqZgdhQrti1FH6mZLWLhp';
     var count = 10;
 
     function setStripe() {

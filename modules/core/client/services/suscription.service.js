@@ -5,7 +5,7 @@ angular
   .service('SuscriptionSrv', ['$http', 'PATHS', 'LanguagesSrv', 'StorageSrv',
     function($http, PATHS, LanguagesSrv, StorageSrv) {
       function storageBasicData(params) {
-        StorageSrv.set('ch-user-data', params);
+        StorageSrv.set('sos-user-data', params);
       }
 
       return {

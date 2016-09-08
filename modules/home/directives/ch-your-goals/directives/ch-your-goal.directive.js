@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-your-goals/views/ch-your-goal.view.html',
+      templateUrl: 'modules/home/directives/sos-your-goals/views/sos-your-goal.view.html',
       scope: {}
     };
   }]);

@@ -319,7 +319,7 @@ angular
           }
         },
         social: {
-          linkedin: 'https://uy.linkedin.com/in/nicolás-alliaume-reisch-b09aaa4b'
+          linkedin: 'https://uy.linkedin.com/in/nicolás-alliaume-reissos-b09aaa4b'
         }
       }];
 

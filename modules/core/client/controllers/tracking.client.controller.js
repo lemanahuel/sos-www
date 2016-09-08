@@ -55,7 +55,7 @@ angular
           description = 'Encuentra el trabajo de tus sueños';
           image = FLYERS.JOBS || FLYERS.DEFAULT;
           break;
-        case 'teach-with-us':
+        case 'teasos-with-us':
           title = 'Conviértete en instructor | Coderhouse';
           description = 'Sumate al equipo de Coderhouse';
           image = FLYERS.TEACH_WITH_US || FLYERS.DEFAULT;

@@ -5,19 +5,6 @@
 
 'use strict';
 
-/*REDIRECT BLOG*/
-if (location.href.indexOf('blog') !== -1) {
-  location.href = 'http://blog.coderhouse.com' + location.pathname.replace('/blog', '');
-}
-/*REDIRECT RUEDA*/
-if (location.href.indexOf('rueda') !== -1) {
-  location.href = 'http://rueda.coderhouse.com';
-}
-/*REDIRECT TRABAJOS*/
-if (location.href.indexOf('trabajos') !== -1) {
-  location.href = 'http://trabajos.coderhouse.com' + location.pathname.replace('/trabajos', '');
-}
-
 $.fn.scrollTo = function (target, options, callback) {
   if (angular.isFunction(options) && arguments.length === 2) {
     callback = options;
@@ -45,10 +32,6 @@ $.fn.scrollTo = function (target, options, callback) {
   });
 };
 
-window.sup = function () {
-  console['log']('%c¯\\_(ツ)_/¯, by %c@Coderhouse %cFull Stack Team', 'color: #fff;', 'color: #14a081;', 'color: #fff;');
-};
-
 //Start by defining the main module and adding the module dependencies
 angular.module(window.APP.NAME, window.APP.DEPENDENCIES);
 
@@ -60,6 +43,4 @@ angular.element(document).ready(function () {
   angular.bootstrap(document, [window.APP.NAME], {
     strictDi: true
   });
-
-  window.sup();
 });

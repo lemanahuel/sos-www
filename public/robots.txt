@@ -2,4 +2,4 @@
 
 User-agent: *
 Disallow:
-Sitemap: https://www.coderhouse.com/sitemap.xml
+Sitemap: https://www.voluntariosos.com/sitemap.xml

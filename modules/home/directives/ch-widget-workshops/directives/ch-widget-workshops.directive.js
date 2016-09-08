@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-widget-workshops/views/ch-widget-workshops.view.html',
+      templateUrl: 'modules/home/directives/sos-widget-workshops/views/sos-widget-workshops.view.html',
       controller: 'chWidgetWorkshopsController',
       controllerAs: 'vm',
       scope: {}

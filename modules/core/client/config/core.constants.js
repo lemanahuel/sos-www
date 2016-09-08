@@ -8,7 +8,7 @@ window.CH_API = (function () {
     base = 'localhost:3002';
 
   if (host.indexOf('herokuapp') !== -1) {
-    base = (host.indexOf('-qa') !== -1 ? 'ch-api-qa' : 'ch-api') + '.herokuapp.com';
+    base = (host.indexOf('-qa') !== -1 ? 'sos-api-qa' : 'sos-api') + '.herokuapp.com';
   } else if (host.indexOf('coderhouse') !== -1) {
     base = 'api.coderhouse.' + (host.indexOf('.io') !== -1 ? 'io' : 'com');
   } else if (host.indexOf('localhost') === -1) {
@@ -38,11 +38,11 @@ angular
     STRIPE: window.CH_API + '/save-customer-stripe'
   })
   .constant('FLYERS', {
-    DEFAULT: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469131287/new-ch-flyer_pjcnxq.jpg',
-    FRONTEND: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469131287/new-ch-front-end-flyer_g4coqz.jpg',
-    UX: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-ch-ux-flyer_wxr1k7.jpg',
-    MKT: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-ch-mkt-flyer_ppqb1k.jpg',
-    BACKEND: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-ch-back-end-flyer_lb0gnn.jpg'
+    DEFAULT: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469131287/new-sos-flyer_pjcnxq.jpg',
+    FRONTEND: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469131287/new-sos-front-end-flyer_g4coqz.jpg',
+    UX: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-sos-ux-flyer_wxr1k7.jpg',
+    MKT: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-sos-mkt-flyer_ppqb1k.jpg',
+    BACKEND: 'https://res.cloudinary.com/hdsqazxtw/image/upload/v1469220935/new-sos-back-end-flyer_lb0gnn.jpg'
   })
   .constant('COURSES_COLORS', {
     'disenador-web': '#40c4ff',

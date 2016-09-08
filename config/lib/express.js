@@ -57,7 +57,7 @@ module.exports.initMiddleware = (app) => {
   app.use(compress());
 
   // Initialize favicon middleware
-  app.use(favicon('./modules/core/client/img/coderhouse-icon.ico'));
+  app.use(favicon('./modules/core/client/img/voluntariosos-icon.ico'));
 
   app.use(helpers.forceHttps);
   //app.use(helpers.legacyApiProxy);
@@ -128,7 +128,7 @@ module.exports.initViewEngine = (app) => {
 module.exports.initSession = (app) => {
   // Express MongoDB session storage
   // app.use(session({
-  //   key: 'coderhouse',
+  //   key: 'voluntariosos',
   //   saveUninitialized: true,
   //   resave: true,
   //   secret: config.sessionSecret,

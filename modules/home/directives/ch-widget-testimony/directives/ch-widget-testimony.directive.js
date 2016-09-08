@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-widget-testimony/views/ch-widget-testimony.view.html',
+      templateUrl: 'modules/home/directives/sos-widget-testimony/views/sos-widget-testimony.view.html',
       scope: {}
     };
   });

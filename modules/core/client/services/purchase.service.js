@@ -5,7 +5,7 @@ angular
   .service('PurchaseSrv', ['$http', 'PATHS', 'LanguagesSrv', '$cookies',
     function($http, PATHS, LanguagesSrv, $cookies) {
       function getLang() {
-        return $cookies.get('ch-lang') || LanguagesSrv.get();
+        return $cookies.get('sos-lang') || LanguagesSrv.get();
       }
 
       return {

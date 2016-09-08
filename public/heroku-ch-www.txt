@@ -1,1 +1,1 @@
- heroku-ch-www
+ heroku-sos-www

@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-careers/views/ch-careers.view.html',
+      templateUrl: 'modules/home/directives/sos-careers/views/sos-careers.view.html',
       controller: 'chCareersController',
       controllerAs: 'vm',
       scope: {

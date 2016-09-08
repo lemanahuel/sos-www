@@ -18,7 +18,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-offices/views/ch-offices.view.html',
+      templateUrl: 'modules/home/directives/sos-offices/views/sos-offices.view.html',
       scope: {}
     };
   }]);

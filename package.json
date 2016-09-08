@@ -1,18 +1,6 @@
 {
-  "name": "ch-www",
-  "version": "3.0.0",
-  "description": "Coderhouse",
-  "private": true,
-  "homepage": "https://www.coderhouse.com",
-  "author": "Coderhouse",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CoderHouse/ch-www"
-  },
-  "contributors": [{
-    "name": "Coderhouse TEAM",
-    "email": "it@coderhouse.com"
-  }],
+  "name": "sos-www",
+  "version": "1.0.0",
   "engines": {
     "node": "6.x.x",
     "npm": "3.x.x"

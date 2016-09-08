@@ -13,7 +13,7 @@ angular
             controllerAs: 'vm',
             controller: ['$uibModalInstance', 'Params',
               function ($uibModalInstance, Params) {
-                var userData = StorageSrv.get('ch-user-data');
+                var userData = StorageSrv.get('sos-user-data');
                 var vm = this;
                 vm.viewSubmit = 'Enviar';
                 vm.params = angular.extend({}, Params, (angular.isDefined(userData) ? userData : {}));

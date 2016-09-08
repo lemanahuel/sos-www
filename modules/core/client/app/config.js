@@ -2,7 +2,7 @@
 'use strict';
 
 window.APP = (function () {
-  var NAME = 'CH-WWW';
+  var NAME = 'SOS-WWW';
 
   return {
     NAME: NAME,
@@ -12,9 +12,7 @@ window.APP = (function () {
       'ui.router',
       'ui.bootstrap',
       'angular-loading-bar',
-      'google.places',
-      'stripe',
-      'angularTrix'
+      'google.places'
     ],
     ADD_MODULE: function (moduleName, dependencies) {
       angular.module(moduleName, dependencies || []);

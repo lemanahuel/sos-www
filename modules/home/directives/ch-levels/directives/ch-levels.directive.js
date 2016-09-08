@@ -6,7 +6,7 @@ angular
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'modules/home/directives/ch-levels/views/ch-levels.view.html',
+      templateUrl: 'modules/home/directives/sos-levels/views/sos-levels.view.html',
       controller: 'chLevelsController',
       controllerAs: 'vm',
       scope: {
