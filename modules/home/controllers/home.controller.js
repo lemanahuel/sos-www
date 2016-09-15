@@ -267,8 +267,7 @@ angular
 
             if (direction === 'down') {
               $('body').addClass('scrolled');
-            }
-            else if (direction === 'up') {
+            } else if (direction === 'up') {
               $('body').removeClass('scrolled');
             }
 

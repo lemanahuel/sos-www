@@ -3,7 +3,7 @@
 
 'use strict';
 
-window.CH_API = (function () {
+window.CH_API = (function() {
   var host = location.host,
     base = 'localhost:3002';
 

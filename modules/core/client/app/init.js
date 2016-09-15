@@ -5,7 +5,7 @@
 
 'use strict';
 
-$.fn.scrollTo = function (target, options, callback) {
+$.fn.scrollTo = function(target, options, callback) {
   if (angular.isFunction(options) && arguments.length === 2) {
     callback = options;
     options = target;
@@ -18,13 +18,13 @@ $.fn.scrollTo = function (target, options, callback) {
     easing: 'swing'
   }, options);
 
-  return this.each(function () {
+  return this.each(function() {
     var scrollPane = $(this);
     var scrollTarget = angular.isNumber(settings.scrollTarget) ? settings.scrollTarget : $(settings.scrollTarget);
     var scrollY = angular.isNumber(scrollTarget) ? scrollTarget : (scrollTarget.offset().top + scrollPane.scrollTop()) - parseInt(settings.offsetTop, 10);
     scrollPane.animate({
       scrollTop: scrollY
-    }, parseInt(settings.duration, 10), settings.easing, function () {
+    }, parseInt(settings.duration, 10), settings.easing, function() {
       if (angular.isFunction(callback)) {
         callback.call(this);
       }
@@ -35,7 +35,7 @@ $.fn.scrollTo = function (target, options, callback) {
 //Start by defining the main module and adding the module dependencies
 angular.module(window.APP.NAME, window.APP.DEPENDENCIES);
 
-angular.element(document).ready(function () {
+angular.element(document).ready(function() {
   if (window.location.hash === '#_=_') {
     window.location.hash = '#!';
   }

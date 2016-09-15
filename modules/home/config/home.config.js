@@ -3,7 +3,7 @@
 angular
   .module('home')
   .config(['$stateProvider',
-    function ($stateProvider) {
+    function($stateProvider) {
       $stateProvider
         .state('home', {
           url: '/',

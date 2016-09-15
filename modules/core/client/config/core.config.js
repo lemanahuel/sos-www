@@ -7,13 +7,13 @@
 angular
   .module('core')
   .config(['$locationProvider',
-    function ($locationProvider) {
+    function($locationProvider) {
       $locationProvider.html5Mode(true).hashPrefix('!');
     }
   ])
   .config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
-      $urlRouterProvider.rule(function ($injector, $location) {
+    function($stateProvider, $urlRouterProvider) {
+      $urlRouterProvider.rule(function($injector, $location) {
         var re = /(.+)(\/+)(\?.*)?$/;
         var path = $location.url();
 
@@ -26,39 +26,39 @@ angular
     }
   ])
   .config(['$sceProvider',
-    function ($sceProvider) {
+    function($sceProvider) {
       $sceProvider.enabled(false);
     }
   ])
   .config(['cfpLoadingBarProvider',
-    function (cfpLoadingBarProvider) {
+    function(cfpLoadingBarProvider) {
       cfpLoadingBarProvider.includeSpinner = false;
     }
   ])
   .config(['$logProvider',
-    function ($logProvider) {
+    function($logProvider) {
       $logProvider.debugEnabled(location.href.indexOf('localhost') !== -1);
     }
   ])
   .config(['$compileProvider',
-    function ($compileProvider) {
+    function($compileProvider) {
       $compileProvider.debugInfoEnabled(location.href.indexOf('localhost') !== -1);
     }
   ])
   .config(['$httpProvider',
-    function ($httpProvider) {
+    function($httpProvider) {
       var locale = window.sessionStorage.getItem('CH-locale') || window.navigator.language || 'es';
 
       switch (locale || window.navigator.language) {
-      case 'en':
-        locale = 'en_US';
-        break;
-      case 'es':
-        locale = 'es_AR';
-        break;
-      default:
-        locale = locale + '_' + locale.toUpperCase();
-        break;
+        case 'en':
+          locale = 'en_US';
+          break;
+        case 'es':
+          locale = 'es_AR';
+          break;
+        default:
+          locale = locale + '_' + locale.toUpperCase();
+          break;
       }
 
       $httpProvider.defaults.headers.common['Accept-Language'] = locale;
@@ -66,7 +66,7 @@ angular
       $httpProvider.useApplyAsync(true);
     }
   ])
-  .config([function () {
+  .config([function() {
     var isProd = location.host;
     var pk = (isProd.indexOf('coderhouse') !== -1 || isProd === 'sos-www.herokuapp.com') ? 'pk_live_161K5nmBoF8y0OyOD2XQxSRF' : 'pk_test_yphpqZgdhQrti1FH6mZLWLhp';
     var count = 10;

@@ -343,8 +343,8 @@ module.exports = (grunt) => {
     //'prettify',
     'jshint',
     'eslint'
-    //'htmllint'
-    //'csslint'
+  //'htmllint'
+  //'csslint'
   ]);
 
   grunt.registerTask('build-qa', [
