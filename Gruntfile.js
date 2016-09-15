@@ -2,9 +2,7 @@
 
 const _ = require('lodash'),
   defaultAssets = require('./config/assets/default'),
-  fs = require('fs'),
-  cloudfrontFwtvWww = '//d9vrie70au994.cloudfront.net',
-  cloudfrontFwtvTv = '//d33utfl382x3hu.cloudfront.net';
+  fs = require('fs');
 
 module.exports = (grunt) => {
   grunt.initConfig({
@@ -248,7 +246,7 @@ module.exports = (grunt) => {
         browsers: ['last 1 version']
       },
       prod_sass: {
-        src: 'modules/core/client/css/styles.css',
+        src: defaultAssets.client.css,
         dest: 'public/.tmp/application.css'
       },
       prod: {
