@@ -35,9 +35,10 @@ public/lib
 #build files
 public/dist/*.js
 public/dist/*.css
-*.css
-*.map
+modules/*.css
+modules/*.map
 public/.tmp/*.js
+.tmp
 *.rdb
 .sass-cache
 
