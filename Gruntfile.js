@@ -350,7 +350,6 @@ module.exports = (grunt) => {
   grunt.registerTask('build-qa', [
     'lint',
     'env:prod',
-    'clean:prod',
     'imagemin:prod',
     'sass:prod',
     'autoprefixer:prod_sass',
@@ -367,7 +366,6 @@ module.exports = (grunt) => {
   grunt.registerTask('build-prod', [
     'lint',
     'env:prod',
-    'clean:prod',
     'imagemin:prod',
     'sass:prod',
     'autoprefixer:prod_sass',
