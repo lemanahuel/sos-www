@@ -10,9 +10,7 @@ window.APP = (function () {
       'ngAnimate',
       'ngCookies',
       'ui.router',
-      'ui.bootstrap',
-      'angular-loading-bar',
-      'google.places'
+      'angular-loading-bar'
     ],
     ADD_MODULE: function (moduleName, dependencies) {
       angular.module(moduleName, dependencies || []);
