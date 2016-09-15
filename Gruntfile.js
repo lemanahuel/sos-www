@@ -351,7 +351,7 @@ module.exports = (grunt) => {
     'lint',
     'env:prod',
     'imagemin:prod',
-    'sass:prod',
+    //'sass:prod',
     'autoprefixer:prod_sass',
     'cssmin:prod',
     'htmlmin:prod',
@@ -367,7 +367,7 @@ module.exports = (grunt) => {
     'lint',
     'env:prod',
     'imagemin:prod',
-    'sass:prod',
+    //'sass:prod',
     'autoprefixer:prod_sass',
     'cssmin:prod',
     'htmlmin:prod',
@@ -379,19 +379,7 @@ module.exports = (grunt) => {
     'concat:prod'
   ]);
 
-  grunt.registerTask('build-prod-conc', [
-    'concurrent:prod',
-    'concurrent:prod1',
-    'concurrent:prod2',
-    'concurrent:prod3',
-    'concurrent:prod4',
-    'concurrent:prod5',
-    'concurrent:prod6',
-    'concurrent:prod7',
-    'concurrent:prod8'
-  ]);
-
-  grunt.registerTask('styles', ['clean:prod', 'sass:prod', 'autoprefixer:prod_sass', 'cssmin:prod']);
+  grunt.registerTask('styles', ['sass:prod', 'autoprefixer:prod_sass', 'cssmin:prod']);
   grunt.registerTask('default', ['env:dev', 'sass:dev', 'concurrent:default']);
   grunt.registerTask('local-prod', ['build-prod', 'concurrent:default']);
   grunt.registerTask('heroku:development', 'build-qa');

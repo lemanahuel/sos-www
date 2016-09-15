@@ -8,9 +8,7 @@ module.exports = {
         'public/lib/magnific-popup/dist/magnific-popup.css',
         'public/lib/OwlCarousel/owl-carousel/owl.carousel.min.css',
         'public/lib/bootstrap/dist/css/bootstrap.min.css',
-        'public/lib/angular-bootstrap/ui-bootstrap-csp.css',
-        'modules/core/client/css/icomoon.css',
-        'modules/core/client/css/simple-line-icons.css'
+        'public/lib/angular-bootstrap/ui-bootstrap-csp.css'
       ],
       js: [
         'public/lib/devicejs/lib/device.min.js',
@@ -29,6 +27,8 @@ module.exports = {
       ]
     },
     css: [
+      'modules/core/client/css/icomoon.css',
+      'modules/core/client/css/simple-line-icons.css',
       'modules/core/client/css/owl.theme.default.min.css',
       'modules/core/client/css/salvattore.css',
       'modules/core/client/css/style.css'
