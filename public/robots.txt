@@ -1,5 +1,0 @@
-# robotstxt.org
-
-User-agent: *
-Disallow:
-Sitemap: https://www.voluntariosos.com/sitemap.xml

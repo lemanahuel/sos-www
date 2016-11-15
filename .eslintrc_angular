@@ -1,8 +1,0 @@
-{
-  "extends": "angular",
-  "rules": {
-    "angular/log": 0,
-    "angular/di": [2, "array"],
-    "angular/no-service-method": 1
-  }
-}
