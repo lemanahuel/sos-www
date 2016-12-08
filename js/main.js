@@ -666,6 +666,23 @@
     });
   };
 
+  var testimonyForm = function(){
+    $('#testimony-form').submit(function(e){
+      e.preventDefault();
+      $.ajax({
+        url: 'https://sos-api-qa.herokuapp.com/testimonies',
+        type: 'post',
+        data: {
+          name: $('#name-field').val(),
+          lastname: $('#lastname-field').val(),
+          email: $('#email-field').val(),
+          text: $('#text-field').val()
+        }
+      }).success(function(){
+      });
+    });
+  };
+
   // Document on load.
   $(function () {
     magnifPopup();
@@ -676,6 +693,7 @@
     carouselTestimony();
     clickMenu();
     HeaderToggle();
+    testimonyForm();
 
     // Animations
     introWayPoint();
