@@ -7594,10 +7594,22 @@ h1, h2, h3, h4, h5, h6 {
   opacity: .5;
 }
 @media screen and (max-width: 768px) {
+  .navbar-brand > span {
+    font-size: 16px;
+  }
   #fh5co-hero {
     padding-top: 2em;
     padding-bottom: 2em;
     height: inherit;
+  }
+
+  #fh5co-hero .fh5co-intro .fh5co-text {
+      bottom: 0;
+      bottom: -13em;
+  }
+  #fh5co-hero .fh5co-intro .btn {
+    margin-top: 281px;
+    margin-left: 59px;
   }
 }
 #fh5co-hero .fh5co-intro {
@@ -7630,7 +7642,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 768px) {
   #fh5co-hero .fh5co-intro .fh5co-text {
     bottom: 0;
-    bottom: -4em;
+    bottom: -15em;
   }
 }
 #fh5co-hero .fh5co-intro h2 {
@@ -8956,74 +8968,36 @@ a > img.fh5co-align-center {
 
 /*# sourceMappingURL=style.css.map */
 
-#fh5co-hero .fh5co-intro .fh5co-text {
-    bottom: -12em;
+.col-md-6.fh5co-text.msj_intro {
+    margin-top: -86px;
 }
 
 #fh5co-hero .fh5co-intro .fh5co-intro-img {
     text-align: right;
-    bottom: 4em;
+    bottom: 6em;
 }
 
 #fh5co-hero .fh5co-intro .fh5co-intro-img {
     text-align: right;
-    bottom: 4em;
-    margin-left: -102px;
+    bottom: 6em;
+    margin-left: -95px;
 }
 
 #fh5co-hero {
     height: 100vh;
 }
 
-#fh5co-subscribe {
-    height: 100vh;
+@media screen and (max-width: 768px)
+#fh5co-hero .fh5co-intro .fh5co-text {
+    bottom: 0;
+    bottom: -4em;
+    margin-top: -15px;
 }
 
-#fh5co-subscribe .form-control {
-  margin-top: 60px;
+#fh5co-products, #fh5co-features {
+    border-bottom: 0px;
 }
 
-#fh5co-features{
-  height: 100vh;
-}
-
-#fh5co-testimony{
-  height: 100vh;
-}
-
-#fh5co-testimony {
-    padding: 13em 0;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-next {
-    margin-right: -66px;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-next, .owl-carousel .owl-controls .owl-nav .owl-prev {
-    margin-top: -79px;
-}
-
-.owl-carousel .owl-controls .owl-nav .owl-prev {
-    margin-left: -73px;
-}
-
-input.btn.btn-primary.form {
-    margin: 30px 0 0 212px;
-}
-
-h2.fh5co-lead.animate-single.faqs-animate-1.fadeIn.animated {
-    margin-left: 126px;
-}
-
-.fh5co-bg-section {
-    height: 100vh;
-}
-
-.fh5co-counter {
-    height: 100vh;
-    margin-top: 200px;
-}
-
-.fh5co-counter-label {
-    margin-top: -600px;
+.fh5co-bg-section .fh5co-overlay {
+    opacity: 0.0;
 }
