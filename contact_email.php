@@ -2,7 +2,11 @@
 require "phpmailer/class.phpmailer.php";
 require "phpmailer/class.smtp.php";
 
-	$subject = "M100 - Aviso alta de usuario";
+$name_field="matias";
+$email_field="mati maraca";
+$textmsj_field="Hola soy un maricon y quiero ver si funciona";
+
+	$subject = "Contacto desde voluntariosos.org";
 	$message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
@@ -13,7 +17,7 @@ require "phpmailer/class.smtp.php";
 <body>
   <table width='600px' border='0' align='center' cellpadding='0' cellspacing='0'>
     <tr>
-      <td style='widht:600px;'><img src='http://badigitalteam.azurewebsites.net/img/mail_logo_m100.png' width='600' height='168' alt=''/></td>
+      <td style='widht:600px;'><img src='http://sos-www-qa.herokuapp.com/images/voluntario_sos.png' width='600' height='168' alt=''/></td>
     </tr>
     <tr>
       <td style='width:600px; background-color:#383838;'><table width='100%' border='0' cellspacing='0' cellpadding='0'>
@@ -36,15 +40,15 @@ require "phpmailer/class.smtp.php";
                 <td>
                   <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Usuario:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Nombre:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$name_field."</td>
                     </tr>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Contraseña:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Email:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$email_field."</td>
                     </tr>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Contraseña:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Mensaje:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$textmsj_field."</td>
                     </tr>                    
                   </table>
@@ -72,7 +76,7 @@ require "phpmailer/class.smtp.php";
               <td style='width:100px; height:50px;'>&nbsp;</td>
             </tr>            <tr>
               <td  style='width:100px; height:50px;'>&nbsp;</td>
-              <td  style='height:50px;'><img src='http://sos-www-qa.herokuapp.com/images/voluntario_sos.png' width='154' height='42' align='right' /></td>
+              <td  style='height:50px;'><img src='' width='154' height='42' align='right' /></td>
               <td  style='width:100px; height:50px;'>&nbsp;</td>
             </tr>
           </table></td>
@@ -97,7 +101,7 @@ require "phpmailer/class.smtp.php";
 	$email->FromName  = $name;		
 	$email->Subject   = $subject;		
 	$email->Body      = $message;
-	$email->AddAddress("jose.montes@davinci.edu.ar");
+	$email->AddAddress("aptitudinteractiva@gmail.com");
 
 	$email->IsHTML(true); 
 
