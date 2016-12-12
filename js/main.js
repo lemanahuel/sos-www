@@ -707,7 +707,6 @@
     pricingWayPoint();
     faqsWayPoint();
     contentWayPoint();
-
     navigationSection();
   });
 }());

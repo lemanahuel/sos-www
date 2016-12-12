@@ -235,6 +235,54 @@
           </div>
         </div>
       </div>
+        <div id="fh5co-contact">
+          <div class="container">
+            <div class="row animate-box">
+              <form id="testimony-form" action="contact-email.php" method="post">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-3">
+                     <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">Contacto</h2>
+                  </div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <input id="email-field" name="email" type="email" class="form-control" placeholder="email">
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <input id="name-field" name="text" type="text" class="form-control" placeholder="nombre">
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <input id="lastname-field" name="text" type="text" class="form-control" placeholder="apellido">
+                      </div> 
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <input id="textmsj-field" name="text_msj" type="text" class="form-control" placeholder="Mensaje">
+                      </div>
+                    </div>
+                 </div>               
+                 <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                      <div class="form-group">
+                        <input name="enviar" type="submit" class="btn btn-primary form" value="Enviar">
+                      </div>
+                    </div>
+                 </div>
+              </form>
+            </div>
+          </div>
+        </div>      
     </div>
   </div>
 
