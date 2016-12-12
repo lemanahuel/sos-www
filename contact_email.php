@@ -20,7 +20,7 @@ $textmsj_field="Hola soy un maricon y quiero ver si funciona";
       <td style='widht:600px;'><img src='http://sos-www-qa.herokuapp.com/images/voluntario_sos.png' width='600' height='168' alt=''/></td>
     </tr>
     <tr>
-      <td style='width:600px; background-color:#383838;'><table width='100%' border='0' cellspacing='0' cellpadding='0'>
+      <td style='width:600px;'><table width='100%' border='0' cellspacing='0' cellpadding='0'>
         <tr>
           <td style='width:100px; height:50px;'>&nbsp;</td>
           <td style='height:50px;'>&nbsp;</td>
@@ -30,25 +30,21 @@ $textmsj_field="Hola soy un maricon y quiero ver si funciona";
           <td style='width:100px;'>&nbsp;</td>
           <td style='width:400px;'>
             <table width='100%' border='0' cellspacing='0' cellpadding='0'>
-              <tr>
               <tr align='center'>
                       <td style='width:400px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;text-align:center;'>&nbsp;</td>
-              </tr>                    
-                    <tr>
-                      
-                    </tr>
+              </tr>
                 <td>
                   <table width='100%' border='0' cellspacing='0' cellpadding='0'>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Nombre:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#000;'>Nombre:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$name_field."</td>
                     </tr>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Email:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#000;'>Email:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$email_field."</td>
                     </tr>
                     <tr>
-                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF;'>Mensaje:</td>
+                      <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#000;'>Mensaje:</td>
                       <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696;'>".$textmsj_field."</td>
                     </tr>                    
                   </table>
@@ -57,30 +53,12 @@ $textmsj_field="Hola soy un maricon y quiero ver si funciona";
               <tr>
                 <td style='height:50px;'>&nbsp;</td>
               </tr>
-              <tr>
-                <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-weight:bold; font-size:19px; color:#FFF; text-align:center;'>Ingresar</td>
-              </tr>
-              <tr>
-                <td style='width:200px; font-family:\"Segoe UI\", Verdana, Geneva, sans-serif; font-size:19px; color:#969696; text-align:center;'>www.voluntariosos.org</td>
-              </tr>  
-              <tr>
-                <td style='height:50px;'>&nbsp;</td>
-              </tr>
               </table>
               </td>
               <td style='width:100px;'>&nbsp;</td>
             </tr>
-            <tr>
-              <td style='width:100px; height:50px;'>&nbsp;</td>
-              <td style='height:50px;'>&nbsp;</td>
-              <td style='width:100px; height:50px;'>&nbsp;</td>
-            </tr>            <tr>
-              <td  style='width:100px; height:50px;'>&nbsp;</td>
-              <td  style='height:50px;'><img src='' width='154' height='42' align='right' /></td>
-              <td  style='width:100px; height:50px;'>&nbsp;</td>
-            </tr>
           </table></td>
-        </tr>
+    </tr>
       </table>
     </body>
     </html>";
