@@ -2,12 +2,14 @@
 require "phpmailer/class.phpmailer.php";
 require "phpmailer/class.smtp.php";
 
-$name_field="matias";
-$email_field="mati maraca";
-$textmsj_field="Hola soy un maricon y quiero ver si funciona";
+$name_field = $_POST['name-field'];
+$lastname = $_POST['lastname-field'];
+$email_field = $_POST['email-field'];
+$textmsj_field = $_POST['textmsj-field'];
 
-	$subject = "Contacto desde voluntariosos.org";
-	$message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+$subject = "Contacto desde voluntariosos.org";
+$message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
 <html xmlns='http://www.w3.org/1999/xhtml'>
 <head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
@@ -80,6 +82,7 @@ $textmsj_field="Hola soy un maricon y quiero ver si funciona";
 	$email->Subject   = $subject;		
 	$email->Body      = $message;
 	$email->AddAddress("aptitudinteractiva@gmail.com");
+  //$email->AddAddress("info@voluntarios.org");
 
 	$email->IsHTML(true); 
 

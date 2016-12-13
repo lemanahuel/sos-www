@@ -71,6 +71,9 @@
       <li><a href="#" data-nav-section="faqs">Preguntas Frecuentes</a></li>
       <li><a href="#" data-nav-section="descargar">Descargá YA!</a></li>
       <li><a href="#" data-nav-section="estadisticas">Números</a></li>
+      <li><a href="#" data-nav-section="testimonies_insert">Deja tu testimonio</a></li>
+      <li><a href="#" data-nav-section="insert_contact">Contacto</a></li>
+      
     </ul>
     <h3 class="fh5co-lead">Connect with us</h3>
     <p class="fh5co-social-icons">
@@ -186,7 +189,7 @@
             <?php include_once("metricas.php");?> 
           </div>
         </div>
-        <div id="fh5co-subscribe">
+        <div id="fh5co-subscribe" data-section="testimonies_insert">
           <div class="container">
             <div class="row animate-box">
               <form id="testimony-form" action="" method="post">
@@ -235,10 +238,10 @@
           </div>
         </div>
       </div>
-        <div id="fh5co-contact">
+        <div id="fh5co-contact" data-section="insert_contact">
           <div class="container">
             <div class="row animate-box">
-              <form id="testimony-form" action="contact-email.php" method="post">
+              <form id="testimony-form" action="contact_email.php" method="post">
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
                      <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">Contacto</h2>
@@ -247,28 +250,28 @@
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="email-field" name="email" type="email" class="form-control" placeholder="email">
+                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="name-field" name="text" type="text" class="form-control" placeholder="nombre">
+                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="lastname-field" name="text" type="text" class="form-control" placeholder="apellido">
+                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="textmsj-field" name="text_msj" type="text" class="form-control" placeholder="Mensaje">
+                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Mensaje">
                       </div>
                     </div>
                  </div>               
