@@ -127,7 +127,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
-                <h2 class="fh5co-lead animate-single faqs-animate-1">Preguntas Frecuentes</h2>
+                <h2 class="fh5co-lead animate-single faqs-animate-1">Dejanos tu testimonio</h2>
                 <p class="fh5co-sub animate-single faqs-animate-2">Las dudas más frecuentes de nuestros usuarios.</p>
               </div>
             </div>
