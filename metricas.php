@@ -19,7 +19,7 @@ $incidents = json_decode(file_get_contents('https://sos-api-qa.herokuapp.com/inc
           </div>
           <div class="col-md-4 text-center">
             <span class="fh5co-counter js-counter" data-from="0" data-to="<?php echo sizeof($users); ?>" data-speed="5000" data-refresh-interval="50"></span>
-            <span class="fh5co-counter-label">Usuarios</span>
+            <span class="fh5co-counter-label">Civiles</span>
           </div>
         </div>
       </div>
