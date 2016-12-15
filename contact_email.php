@@ -73,15 +73,16 @@ $message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http
 	$email->CharSet="UTF-8";
 	$email->Host = 'smtp.sendgrid.net'; // Specify main and backup SMTP servers
 	$email->SMTPAuth = true; // Enable SMTP authentication
-	$email->Username = 'azure_38eff7d503959de55c47dbeeed003336@azure.com';// SMTP username
-	$email->Password = 'homero1234';// SMTP password
+  $email->Username = 'digitalteamba';// SMTP username
+  $email->Password = 'Homero1234';// SMTP password
+
 	$email->Port = 587;
 
 	$email->From      = $from;		
 	$email->FromName  = $name;		
 	$email->Subject   = $subject;		
 	$email->Body      = $message;
-	$email->AddAddress("aptitudinteractiva@gmail.com");
+	$email->AddAddress("info@volutariosos.com");
   //$email->AddAddress("info@voluntarios.org");
 
 	$email->IsHTML(true); 

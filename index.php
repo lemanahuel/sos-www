@@ -107,7 +107,11 @@
               <div class="col-md-6 fh5co-text msj_intro">
                 <h2 class="to-animate intro-animate-1">El tiempo es vida</h2>
                 <p class="to-animate intro-animate-2">Conectamos a voluntarios con emergencias. Cada minuto cuenta para salvar una vida.</p>
-                <p class="to-animate intro-animate-3 hidden-xs"><a href="#" class="btn btn-primary btn-md"><i class="icon-android"></i> Descargar</a></p>
+                <p class="to-animate intro-animate-3 hidden-xs">
+                  <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary btn-md"><i class="icon-android"></i> 
+                    Descargar
+                  </a>
+                </p>
               </div>
               <div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4 hidden-xs">
                 <img src="images/iphone_6_3.png" alt="App voluntariosos ilustracion">
@@ -173,7 +177,11 @@
                         <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
                           <h2 class="fh5co-lead to-animate">Descargate la Aplicación YA!</h2>
                           <p class="fh5co-sub to-animate">El tiempo en una emergencia es valioso. Ayudá a salvar vidas.</p>
-                          <div class="to-animate"><a href="#" class="btn btn-primary">Descargala</a></div>
+                          <div class="to-animate">
+                            <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary">
+                              Descargala
+                            </a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -192,37 +200,39 @@
         <div id="fh5co-subscribe" data-section="testimonies_insert">
           <div class="container">
             <div class="row animate-box">
-              <form id="testimony-form" action="" method="post">
+              <form id="testimony-form" action="contact_email.php" method="post">
                 <div class="row">
                   <div class="col-md-6 col-md-offset-3">
-                     <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">Preguntas frecuentes</h2>
+                     <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">
+                      Dejanos tu testimonio
+                      </h2>
                   </div>
                 </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="email-field" name="email" type="email" class="form-control" placeholder="email">
+                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email" required="Por favor ingresa un email">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="name-field" name="text" type="text" class="form-control" placeholder="nombre">
+                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre" required="Por favor ingrese su nombre">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="lastname-field" name="text" type="text" class="form-control" placeholder="apellido">
+                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido" required="Por favor ingresa un apellido">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="text-field" name="text_msj" type="text" class="form-control" placeholder="Mensaje">
+                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Testimonio" required="Por favor ingrese su mensaje">
                       </div>
                     </div>
                  </div>               
@@ -237,7 +247,6 @@
             </div>
           </div>
         </div>
-      </div>
         <div id="fh5co-contact" data-section="insert_contact">
           <div class="container">
             <div class="row animate-box">
@@ -250,28 +259,28 @@
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email">
+                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email" required="Por favor ingresa un email">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre">
+                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre" required="Por favor ingrese su nombre">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido">
+                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido" required="Por favor ingresa un apellido">
                       </div> 
                     </div>
                  </div>
                  <div class="row">
                     <div class="col-md-6 col-md-offset-3">
                       <div class="form-group">
-                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Mensaje">
+                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Mensaje" required="Por favor ingresa un mensaje">
                       </div>
                     </div>
                  </div>               
@@ -286,6 +295,7 @@
             </div>
           </div>
         </div>      
+      </div>
     </div>
   </div>
 

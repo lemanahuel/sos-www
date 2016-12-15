@@ -9001,3 +9001,51 @@ a > img.fh5co-align-center {
 .fh5co-bg-section .fh5co-overlay {
     opacity: 0.0;
 }
+
+input#email-field {
+    margin-bottom: 30px;
+}
+
+div#fh5co-testimony {
+  height: 101vh;
+}
+
+.owl-carousel.owl-theme.owl-responsive-1000.owl-loaded {
+    margin-top: 100px;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-prev {
+    margin-top: -66px;
+}
+
+.owl-carousel .owl-controls .owl-nav .owl-next {
+    margin-top: -66px;
+}
+
+figure.fh5co-vcard {
+    margin-left: 53px;
+}
+
+.col-md-9.col-sm-9.col-xs-8.col-xxs-12.text_volun {
+    margin-top: 20px;
+}
+
+.fh5co-hero-wrap, .fh5co-bg-section {
+    height: 100vh;
+}
+
+#fh5co-features, #fh5co-features-2, #fh5co-features-3, #fh5co-products, #fh5co-faqs {
+    padding: 2em 0;
+}
+
+.fh5co-section-heading {
+    margin-bottom: 0em;
+}
+
+.fh5co-bg-section {
+  margin-bottom: -32px;
+}
+
+.fh5co-section-heading .fh5co-lead {
+    margin-top: 49px;
+}
