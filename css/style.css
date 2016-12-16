@@ -9002,10 +9002,6 @@ a > img.fh5co-align-center {
     opacity: 0.0;
 }
 
-input#email-field {
-    margin-bottom: 30px;
-}
-
 div#fh5co-testimony {
   height: 101vh;
 }
@@ -9056,4 +9052,21 @@ form#testimony-form {
 
 div#fh5co-contact {
     height: 100vh;
+}
+
+#fh5co-subscribe .form-group {
+    margin-bottom: 30px;
+}
+
+div#fh5co-faqs {
+    height: 100vh;
+}
+
+.col-md-6.col-md-offset-3.mess {
+    margin-top: 128px;
+ }
+ 
+img.img_preload {
+    margin-left: 35%;
+    margin-top: 10%;
 }

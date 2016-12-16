@@ -59,11 +59,9 @@
   <!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
-
 </head>
 
 <body>
-
   <div id="fh5co-offcanvass">
     <ul>
       <li class="active"><a href="#" data-nav-section="home">Inicio</a></li>
@@ -85,220 +83,21 @@
     </p>
   </div>
 
-  <div id="fh5co-menu" class="navbar">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><span>Menu</span> <i></i></a>
-          <a href="index.html" class="navbar-brand"><span>voluntariosos</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php include_once('nav.php');?>
 
   <div id="fh5co-page">
     <div id="fh5co-wrap">
-      <header id="fh5co-hero" data-section="home" role="banner" style="background: url(images/bg_2.jpg) top left; background-size: cover;">
-        <div class="fh5co-overlay"></div>
-        <div class="fh5co-intro">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-md-6 fh5co-text msj_intro">
-                <h2 class="to-animate intro-animate-1">El tiempo es vida</h2>
-                <p class="to-animate intro-animate-2">Conectamos a voluntarios con emergencias. Cada minuto cuenta para salvar una vida.</p>
-                <p class="to-animate intro-animate-3 hidden-xs">
-                  <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary btn-md"><i class="icon-android"></i> 
-                    Descargar
-                  </a>
-                </p>
-              </div>
-              <div class="col-md-6 text-right fh5co-intro-img to-animate intro-animate-4 hidden-xs">
-                <img src="images/iphone_6_3.png" alt="App voluntariosos ilustracion">
-              </div>
-              <div class="hidden-md hidden-xl col-md-6">
-                <p class="to-animate intro-animate-3"><a href="#" class="btn btn-primary btn-md"><i class="icon-android"></i> Descargar</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- END .header -->
-
+      <?php include_once('home.php');?>
       <div id="fh5co-main">
         <?php include_once('testimonios.php'); ?>
-        <div id="fh5co-faqs" data-section="faqs">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
-                <h2 class="fh5co-lead animate-single faqs-animate-1">Dejanos tu testimonio</h2>
-                <p class="fh5co-sub animate-single faqs-animate-2">Las dudas más frecuentes de nuestros usuarios.</p>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="container">
-            <div class="faq-accordion active to-animate">
-              <span class="faq-accordion-icon-toggle active"><i class="icon-arrow-down"></i></span>
-              <h3>¿Que es VoluntarioSOS</h3>
-              <div class="faq-body" style="display: block;">
-                <p>Nuestra aplicación se encarga de conectar una emergencia con los especialistas voluntarios de la zona mientras se aguarda la llegada de una ambulancia. A su vez VoluntarioSOS pubica en un servicio público la emergencia para que los servicios
-                  de emergencias adheridos se puedan enterar también por ese medio. Pero esto no es todo, también al precionar el botón de emergencia automáticamente hace una llamada al 911 sin necesidad de que los usuarios deban salir de la aplicacion
-                  y marcar el número.</p>
-              </div>
-            </div>
-            <div class="faq-accordion to-animate">
-              <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
-              <h3>¿VoluntarioSOS es gratis?</h3>
-              <div class="faq-body">
-                <p>Totalmente, nuestro objetivo es salvar vidas, aportando nuestro conocimiento en tecnologías de vanguardia.</p>
-              </div>
-            </div>
-            <div class="faq-accordion to-animate">
-              <span class="faq-accordion-icon-toggle"><i class="icon-arrow-down"></i></span>
-              <h3>¿Como me convierto en Voluntario?</h3>
-              <div class="faq-body">
-                <p>Desde la aplicacion en la opción "¡Quiero ser voluntario!" completa las preguntas que te dispondrá el sistema para validar que sabes sobre emergencias y también los datos solicitados. Luego el administrador evaluará tu solicitud y se te
-                  notificará el resultado.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="fh5co-features" data-section="descargar">
-          <div class="fh5co-bg-section cta" id="fh5co-cta" style="background-image: url(images/hero_bg.jpg); background-attachment: fixed;">
-            <div class="fh5co-overlay"></div>
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="fh5co-hero-wrap">
-                    <div class="fh5co-hero-intro text-center">
-                      <div class="row">
-                        <div class="col-md-8 col-md-offset-2 fh5co-section-heading text-center">
-                          <h2 class="fh5co-lead to-animate">Descargate la Aplicación YA!</h2>
-                          <p class="fh5co-sub to-animate">El tiempo en una emergencia es valioso. Ayudá a salvar vidas.</p>
-                          <div class="to-animate">
-                            <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary">
-                              Descargala
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="fh5co-counter" data-section="estadisticas">
-          <div class="fh5co-bg-section" style="background-image: url(images/bg_1.jpg); background-attachment: fixed;">
-            <div class="fh5co-overlay"></div>
-            <?php include_once("metricas.php");?> 
-          </div>
-        </div>
-        <div id="fh5co-subscribe" data-section="testimonies_insert">
-          <div class="container">
-            <div class="row animate-box">
-              <form id="testimony-form" action="contact_email.php" method="post">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                     <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">
-                      Dejanos tu testimonio
-                      </h2>
-                  </div>
-                </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email" required="Por favor ingresa un email">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre" required="Por favor ingrese su nombre">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido" required="Por favor ingresa un apellido">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Testimonio" required="Por favor ingrese su mensaje">
-                      </div>
-                    </div>
-                 </div>               
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input name="enviar" type="submit" class="btn btn-primary form" value="Enviar">
-                      </div>
-                    </div>
-                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div id="fh5co-contact" data-section="insert_contact">
-          <div class="container">
-            <div class="row animate-box">
-              <form id="testimony-form" action="contact_email.php" method="post">
-                <div class="row">
-                  <div class="col-md-6 col-md-offset-3">
-                     <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">Contacto</h2>
-                  </div>
-                </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="email-field" name="email-field" type="email" class="form-control" placeholder="email" required="Por favor ingresa un email">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="name-field" name="name-field" type="text" class="form-control" placeholder="nombre" required="Por favor ingrese su nombre">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="lastname-field" name="lastname-field" type="text" class="form-control" placeholder="apellido" required="Por favor ingresa un apellido">
-                      </div> 
-                    </div>
-                 </div>
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input id="textmsj-field" name="textmsj-field" type="text" class="form-control" placeholder="Mensaje" required="Por favor ingresa un mensaje">
-                      </div>
-                    </div>
-                 </div>               
-                 <div class="row">
-                    <div class="col-md-6 col-md-offset-3">
-                      <div class="form-group">
-                        <input name="enviar" type="submit" class="btn btn-primary form" value="Enviar">
-                      </div>
-                    </div>
-                 </div>
-              </form>
-            </div>
-          </div>
-        </div>      
+        <?php include_once('faqs.php');?>
+        <?php include_once('download.php');?>
+        <?php include_once('statistics.php');?>
+        <?php include_once('insert_testimony.php');?>
+        <?php include_once('contact_form.php');?>      
       </div>
     </div>
   </div>
-
 
   <!-- jQuery -->
   <script src="js/jquery.min.js"></script>
@@ -317,8 +116,26 @@
   <!-- Main JS -->
   <script src="js/main.js"></script>
 
+    <script type="text/javascript">
+        $('#contact-form').submit(function() {
+            $.ajax({
+                //nos fijamos si en el form es POST o GET
+                type: $(this).attr('method'),
+                //traemos el action del form (recursoBuscar.php)
+                url: $(this).attr('action'),
+                //obtenemos los datos del formulario
+                data: $(this).serialize(),
 
-
+                beforeSend: function () {
+                  $('#contact_response').html("<img class='img_preload' src='images/preload.gif'/>");          
+                },
+                success: function(response) {
+                  $('#contact_response').html(response);
+                }
+            });   
+            return false;
+        });
+    </script>
 
 </body>
 

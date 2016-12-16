@@ -25,7 +25,6 @@ $response = json_decode($response);
         </div>
         <?php } ?>
       </div>
-
     </div>
   </div>
 </div>

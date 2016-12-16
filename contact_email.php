@@ -92,5 +92,14 @@ $message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http
 	if(!$email->Send()) {
 		echo("Mailer Error: " . $email->ErrorInfo);
 	} else {
+  ?>
+  <div class="col-md-6 col-md-offset-3 mess">                                                                 
+      <h2 class="fh5co-lead animate-single faqs-animate-1 fadeIn animated">
+        <?php echo($name_field." ".$lastname." "); ?>su mensaje fue enviado con exito. En la brevedad sera respondido a <?php echo($email_field);?>. Muchas Gracias!
+      </h2>
+  </div>
+
+  <?php
 	}
-?>		
+
+?>	
