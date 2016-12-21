@@ -68,7 +68,7 @@
       <li><a href="#" data-nav-section="testimonies">Testimonios</a></li>
       <li><a href="#" data-nav-section="faqs">Preguntas Frecuentes</a></li>
       <li><a href="#" data-nav-section="descargar">Descargá YA!</a></li>
-      <li><a href="#" data-nav-section="estadisticas">Números</a></li>
+      <li><a href="#" data-nav-section="estadisticas">Métricas</a></li>
       <li><a href="#" data-nav-section="testimonies_insert">Deja tu testimonio</a></li>
       <li><a href="#" data-nav-section="insert_contact">Contacto</a></li>
       
@@ -86,7 +86,11 @@
         <?php include_once('download.php');?>
         <?php include_once('statistics.php');?>
         <?php include_once('insert_testimony.php');?>
-        <?php include_once('contact_form.php');?>      
+        <?php include_once('contact_form.php');?>     
+
+        <div id="footer">
+          <p>Copyright © 2016 VoluntarioSOS</p>
+        </div>
       </div>
     </div>
   </div>
