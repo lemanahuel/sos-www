@@ -12,9 +12,6 @@ $response = json_decode($response);
 		foreach($response as $mydata){
 		?>
         <div class="item">
-          <div class="col-md-3 col-sm-3 col-xs-4 col-xxs-12">
-            <figure class="fh5co-vcard"><img src="images/user.jpg" alt="" class="img-responsive"></figure>
-          </div>
           <div class="col-md-9 col-sm-9 col-xs-8 col-xxs-12">
             <blockquote>
               <p>&ldquo;<?php echo $mydata->text; ?>&rdquo;</p>
