@@ -675,7 +675,7 @@
                     name: $('#name-field').val(),
                     lastname: $('#lastname-field').val(),
                     email: $('#email-field').val(),
-                    text: $('#text-field').val()
+                    text: $('#textmsj-field').val()
                 }
             }).then(function(res) {
                 console.log(res && res.data)
