@@ -123,7 +123,8 @@
                 data: $(this).serialize(),
 
                 beforeSend: function () {
-                  $('#contact_response').html("<img class='img_preload' src='images/preload.gif'/>");          
+                  $('#contact_response').html("<img class='img_preload' src='images/preload.gif'/>");
+
                 },
                 success: function(response) {
                   $('#contact_response').html(response);
