@@ -677,10 +677,10 @@
                     email: $('#email-field').val(),
                     text: $('#textmsj-field').val()
                 },beforeSend: function () {
-                    $('#fh5co-subscribe').html("<img class='img_preload' src='images/preload.gif'/>");          
+                    $('#probando').html("<img class='img_preload' src='images/preload.gif'/>");          
                 },
                 success: function(response) {
-                  $('#fh5co-subscribe').html("<div class='col-md-6 col-md-offset-3 mess'><h2 class='fh5co-lead animate-single faqs-animate-1 fadeIn animated'>Su testimonio fue enviado con exito. En la brevedad sera publicado. Muchas Gracias!</h2></div>");
+                  $('#probando').html("<div class='col-md-6 col-md-offset-3 mess'><h2 class='fh5co-lead animate-single faqs-animate-1 fadeIn animated'>Su testimonio fue enviado con exito. En la brevedad sera publicado. Muchas Gracias!</h2></div>");
                 }                                           
             
             }).then(function(res) {
