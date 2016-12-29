@@ -7658,6 +7658,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 40px;
   }
 }
+
 #fh5co-hero .fh5co-intro p {
   font-size: 18px;
   line-height: 26px;
@@ -9075,4 +9076,10 @@ div#fh5co-faqs {
 img.img_preload {
     margin-left: 35%;
     margin-top: 10%;
+}
+
+@media screen and (max-width: 768px){
+  .fh5co-section-heading .fh5co-lead {
+    margin-top: -210px !important;
+  }
 }
