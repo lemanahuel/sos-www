@@ -1,5 +1,5 @@
 <?php
-$response = file_get_contents('https://sos-api-qa.herokuapp.com/testimonies');
+$response = file_get_contents('https://sos-api-prod.herokuapp.com/testimonies');
 $response = json_decode($response);
 ?>
 

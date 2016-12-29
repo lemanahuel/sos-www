@@ -1,4 +1,3 @@
-;
 (function() {
 
     'use strict';
@@ -670,7 +669,7 @@
             e.preventDefault();
             e.stopPropagation();
             $.ajax({
-                url: 'https://sos-api-qa.herokuapp.com/testimonies',
+                url: 'https://sos-api-prod.herokuapp.com/testimonies',
                 type: 'post',
                 data: {
                     name: $('#name-field').val(),
