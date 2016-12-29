@@ -8,8 +8,8 @@
                 <h2 class="to-animate intro-animate-1">El tiempo es vida</h2>
                 <p class="to-animate intro-animate-2">Conectamos a voluntarios con emergencias. Cada minuto cuenta para salvar una vida.</p>
                 <p class="to-animate intro-animate-3 hidden-xs">
-                  <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary btn-md"><i class="icon-android"></i> 
-                    Descargar
+                  <a href="https://play.google.com/store/apps/details?id=com.app.voluntariosos.mvpauth0" target="_blank" class="btn btn-primary">
+                      Descargala
                   </a>
                 </p>
               </div>

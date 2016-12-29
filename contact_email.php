@@ -72,8 +72,8 @@ $message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http
 	$email->CharSet="UTF-8";
 	$email->Host = 'smtp.sendgrid.net'; // Specify main and backup SMTP servers
 	$email->SMTPAuth = true; // Enable SMTP authentication
-  $email->Username = 'digitalteamba';// SMTP username
-  $email->Password = 'Homero1234';// SMTP password
+  $email->Username = 'jmm.87';// SMTP username
+  $email->Password = 'xeneise3268';// SMTP password
 
 	$email->Port = 587;
 
@@ -81,7 +81,7 @@ $message = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http
 	$email->FromName  = $name;		
 	$email->Subject   = $subject;		
 	$email->Body      = $message;
-	$email->AddAddress("info@volutariosos.com");
+	$email->AddAddress("matiblacher@gmail.com");
   //$email->AddAddress("info@voluntarios.org");
 
 	$email->IsHTML(true); 
